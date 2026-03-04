@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>暑期实习复习计划</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 头部 -->
+  <div class="header">
+    <h1>暑期实习复习计划</h1>
+    <p class="subtitle">2026.03.01 — 2026.05.10 ｜ 71天</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="container">
+    <!-- 进度条 -->
+    <div class="progress-section">
+      <div class="progress-info">
+        <span id="progress-text">第 0 天 / 71 天</span>
+        <span id="progress-pct">0%</span>
+      </div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-fill" style="width: 0%"></div>
+      </div>
+    </div>
+
+    <!-- 月份标签导航 -->
+    <div class="month-tabs">
+      <button class="month-tab active" data-idx="0">3月</button>
+      <button class="month-tab" data-idx="1">4月</button>
+      <button class="month-tab" data-idx="2">5月</button>
+    </div>
+
+    <!-- 月历 -->
+    <div id="calendar-container">
+      <div class="month-title" id="month-title"></div>
+      <div class="weekday-row">
+        <div>一</div><div>二</div><div>三</div><div>四</div><div>五</div><div>六</div><div>日</div>
+      </div>
+      <div class="calendar-grid" id="calendar-grid"></div>
+    </div>
+
+    <!-- 图例 -->
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <div class="footer">Java后端大厂暑期实习 · 每日复习追踪</div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
